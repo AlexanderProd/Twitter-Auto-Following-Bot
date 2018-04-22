@@ -20,4 +20,5 @@ Click on 'Create my Access Token' and Copy:
 1. Access Token
 2. Access Token Secret
 
-Once you have these 4 keys, put them in the index.php file and run it on a server. You'll start following people who are talking about a certain keyword.
+Once you have these 4 keys, rename the credentials-template.php file to credentials.php and put them in there and run it on a server.
+You can now follow people based on interest or follow a users followers.
