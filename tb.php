@@ -77,7 +77,7 @@ class TwitterBot
 			"count"   		=> $follow_limit,
 		);
 
-		for ($i=0; $i < (/* $this->getFollowersNumber($user) */intdiv(47984, $follow_limit)+2); $i++) {
+		for ($i=0; $i < (/* $this->getNumberOfFollowers($user) */intdiv(47984, $follow_limit)+2); $i++) {
 			echo "Iteration:".$i;
 			$results = $this->getFollowers($query);
 			foreach ($results->ids as $result) {
@@ -110,7 +110,7 @@ class TwitterBot
 		}
 	}
 
-	public function getFollowersNumber($user){
+	public function getNumberOfFollowers($user){
 
 		$query = array(
 			"screen_name" => $user,
